@@ -11,8 +11,6 @@ class PickDate extends StatefulWidget {
 class _PickDateState extends State<PickDate> {
   DateTime today = DateTime.now();
 
-  
-
   @override
   Widget build(BuildContext context) {
     return const Scaffold(
