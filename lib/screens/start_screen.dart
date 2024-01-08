@@ -72,7 +72,7 @@ class _StartScreenState extends State<StartScreen> {
                 children: [
                   ElevatedButton(
                     onPressed: datePicker,
-                    child: const Text('날짜변경'),
+                    child: const Text('날짜 변경'),
                   ),
                 ],
               ),
@@ -94,14 +94,17 @@ class _StartScreenState extends State<StartScreen> {
                       child: const Icon(Icons.add_circle_outline_sharp),
                     ),
                   ),
-                  Container(
-                    padding: const EdgeInsets.symmetric(
-                        horizontal: 30, vertical: 10),
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(10),
-                      color: Colors.grey.shade400,
+                  GestureDetector(
+                    onTap: () {},
+                    child: Container(
+                      padding: const EdgeInsets.symmetric(
+                          horizontal: 30, vertical: 10),
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(10),
+                        color: Colors.grey.shade400,
+                      ),
+                      child: const Icon(Icons.remove_circle_outline),
                     ),
-                    child: const Icon(Icons.remove_circle_outline),
                   ),
                 ],
               ),
@@ -119,7 +122,7 @@ class _StartScreenState extends State<StartScreen> {
                     width: MediaQuery.of(context).size.width / 2 - 40,
                     child: ElevatedButton(
                       onPressed: timePicker,
-                      child: const Text('날짜변경'),
+                      child: const Text('출근 시간'),
                     ),
                   ),
                 ],
